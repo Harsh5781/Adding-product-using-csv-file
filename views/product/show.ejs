@@ -1,0 +1,15 @@
+<%layout('layouts/boilerplate')%>
+    <h1><%=product.name%></h1>
+    <h5>Description: <%=product.description%></h5>
+    <h5>Quantity: <%=product.quantity%></h5>
+    <p>Price: Rs <%=product.price%></p>
+    <div>
+
+    </div>
+    <%if(currentUser && product.user.equals(currentUser.id)){%>
+
+        <a href="/product/<%=product.id%>/edit">Edit</a>
+        <form action="/product/<%=product.id%>?_method=DELETE" method="post">
+            <button>Delete</button>
+        </form>
+    <%}%>

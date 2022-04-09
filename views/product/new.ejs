@@ -1,0 +1,25 @@
+<%layout('layouts/boilerplate')%>
+<h1>New product</h1>
+    <!-- <form action="/product" method="post">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter name">
+        </div>
+        <div>
+            <label for="description">Description: </label>
+            <input type="text" name="description" id="description" placeholder="Enter description">
+        </div>
+        <div>
+            <label for="quantity">Quantity: </label>
+            <input type="text" name="quantity" id="quantity" placeholder="Enter quantity">
+        </div>
+        <div>
+            <label for="price">Price: </label>
+            <input type="text" name="price" id="price" placeholder="Enter price">
+        </div>
+        <button>Add</button>
+    </form> -->
+    <form action="/product" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" id="file">
+        <button>Submit</button>
+    </form>

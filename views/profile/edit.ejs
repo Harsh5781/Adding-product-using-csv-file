@@ -1,0 +1,16 @@
+<% layout('/layouts/boilerplate')%>
+<form action="/profile/<%=user.id%>?_method=PUT" method="post">
+    <div>
+        <label for="firstName">First Name: </label>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter first name" value="<%=user.firstName%>">
+    </div>
+    <div>
+        <label for="lastName">Last Name: </label>
+        <input type="text" name="lastName" id="lastName" placeholder="Enter last name" value="<%=user.lastName%>">
+    </div>
+    <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" placeholder="Enter username" value="<%=user.username%>">
+    </div>
+    <button>Save details</button>
+</form>

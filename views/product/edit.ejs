@@ -1,0 +1,20 @@
+<%layout('layouts/boilerplate')%>
+    <form action="/product/<%=product.id%>?_method=PUT" method="post">
+        <div>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter name" value="<%=product.name%>">
+        </div>
+        <div>
+            <label for="description">Description: </label>
+            <input type="text" name="description" id="description" placeholder="Enter description" value="<%=product.description%>">
+        </div>
+        <div>
+            <label for="quantity">Quantity: </label>
+            <input type="text" name="quantity" id="quantity" placeholder="Enter quantity" value="<%=product.quantity%>">
+        </div>
+        <div>
+            <label for="price">Price: </label>
+            <input type="text" name="price" id="price" placeholder="Enter price" value="<%=product.price%>">
+        </div>
+        <button>Edit</button>
+    </form>
