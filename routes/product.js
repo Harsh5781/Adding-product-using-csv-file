@@ -62,7 +62,6 @@ router.route('/')
                         }))
                         for(let item of new_arr){
                         const product = new Product(item)
-
                         const user = await User.findById(req.user.id)
                         product.user = user.id
                         await product.save()
